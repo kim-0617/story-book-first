@@ -41,7 +41,7 @@ export default {
     colors: {
       "primary": "#1d2745",
       "secondary": "#1de5d4",
-      "tertiary": "#f52c50",
+      "error": "#f52c50",
       "white": "#ffffff",
       "mono100": "#f1f1f1",
       "mono200": "#b2b2b2",
