@@ -5,3 +5,9 @@
 body {
   font-family: "Noto Sans KR";
 }
+
+.relative {
+  >p {
+    position: absolute;
+  }
+}

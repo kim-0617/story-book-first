@@ -5,7 +5,7 @@ interface ILabelProps {
 
 export default function Label({ htmlFor, children }: ILabelProps) {
   return (
-    <label className="text-sm text-primary" htmlFor={htmlFor}>
+    <label className="text-sm text-primary text-center" htmlFor={htmlFor}>
       {children}
     </label>
   )

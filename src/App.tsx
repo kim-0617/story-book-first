@@ -1,37 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Label from './components/Label'
+import DefaultTextField from './components/DefaultTextField'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [isError, setIsError] = useState<boolean>(false);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1
-        className='text-3xl font-bold underline text-secondary text-base'
+      <Label htmlFor="email">이메일</Label>
+      <DefaultTextField
+        id='email'
+        value=''
+        placeholder='이메일을 입력하세요'
+        errorMessage='이메일을 확인해주세요'
+        isError={isError}
+        onChange={() => { }}
+        onClick={() => { }}
+      />
+      <div className='my-20' />
+      <Label htmlFor="address">주소</Label>
+      <DefaultTextField
+        id='address'
+        value=''
+        placeholder='주소를 입력하세요'
+        errorMessage='주소를 확인해주세요'
+        isError={isError}
+        onChange={() => { }}
+        onClick={() => { }}
+      />
+      <button
+        className='mt-10'
+        onClick={() => setIsError(prev => !prev)}
       >
-        Vite + React
-      </h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        에러토글
+      </button>
     </>
   )
 }

@@ -10,6 +10,11 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
+    id: {
+      control: "text",
+      description: "DefaultTextField의 id",
+      defaultValue: 'text-field',
+    },
     errorMessage: {
       control: "text",
       description: "DefaultTextField의 에러메세지",
@@ -46,6 +51,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    id: 'text-field',
     isError: false,
     errorMessage: "텍스트를 확인해주세요",
     placeholder: "텍스트를 입력해주세요",
