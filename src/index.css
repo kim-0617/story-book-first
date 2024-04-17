@@ -11,3 +11,9 @@ body {
     position: absolute;
   }
 }
+
+@layer components {
+  .navigation-title-wrpper>button {
+    @apply mr-[7px];
+  }
+}
