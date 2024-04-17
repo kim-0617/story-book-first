@@ -9,7 +9,7 @@ const TagButton = ({ isChecked, children, onClick }: ITagButtonProps) => {
 
     return (
         <button
-            className={`w-full h-[33px] px-[10px] rounded-tag-button border border-white ${bgStyle} text-sm font-medium`}
+            className={`h-[33px] px-[10px] rounded-tag-button border border-white ${bgStyle} text-sm font-medium`}
             onClick={onClick}
         >
             {children}
