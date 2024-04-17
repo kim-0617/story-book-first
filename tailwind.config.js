@@ -47,6 +47,9 @@ export default {
       "mono200": "#b2b2b2",
       "mono300": "#d6d7d9",
       "social": "#395997",
+    },
+    borderRadius: {
+      "primary-button": '5px'
     }
   },
   plugins: [],
