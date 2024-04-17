@@ -47,9 +47,11 @@ export default {
       "mono200": "#b2b2b2",
       "mono300": "#d6d7d9",
       "social": "#395997",
+      "darkOpacity": "rgba(255,255,255,0.1)",
     },
     borderRadius: {
-      "primary-button": '5px'
+      "primary-button": '5px',
+      "tag-button": '17.5px',
     }
   },
   plugins: [],
